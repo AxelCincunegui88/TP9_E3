@@ -14,6 +14,15 @@
 #ifndef SUMA_DIGITOS_H
 #define SUMA_DIGITOS_H
 
+/*****************************************************************
+ * Función: suma_digitos 
+ * Descripccion: recibe un numero entero y lo descompone en digitos y los suma entre si
+ * Param1: Numero entero
+ * Salidad: Numero entero
+ * 
+ */
+
+int suma_digitos(int n1);
 
 
 
