@@ -33,8 +33,8 @@ int input (char str[MAX_LETTERS])
                     espacio++;
                 }
 	}
-        printf("Conta= %d\n",conta);
-        printf("Espacio= %d\n",espacio);
+       // printf("Conta= %d\n",conta);
+       // printf("Espacio= %d\n",espacio);
         
 	
         return (conta);
@@ -49,27 +49,28 @@ int palindrome(char string[MAX_LETTERS],int cant)
     {
         if((*p2)==(*p1))
         {
-            printf("Caso inicial: %c\n",(*p2));
+        //    printf("Caso inicial: %c\n",(*p2));
             return OK;
         }
         else
         {
-            printf("Caso inicial fallo: p2=%c\tp1=%c\n",(*p2), (*p1));
+        //    printf("Caso inicial fallo: p2=%c\tp1=%c\n",(*p2), (*p1));
             return FAIL;
         }
     }
     else
+        
     {
         if((*p2)==(*p1))
         {
-            printf("Caso letra: %c\n",(*p2));
-            printf("Caso cant: %d\n",cant);
+          //  printf("Caso letra: %c\n",(*p2));
+          //  printf("Caso cant: %d\n",cant);
             return OK+palindrome((string+1),(cant-2));
         }
         else
         {
-            printf("Caso letra fallo: p2=%c\tp1=%c\n",(*p2), (*p1));
-            printf("Caso cant: %d\n",cant);
+         //   printf("Caso letra fallo: p2=%c\tp1=%c\n",(*p2), (*p1));
+         //   printf("Caso cant: %d\n",cant);
             return FAIL;
         }
     }
